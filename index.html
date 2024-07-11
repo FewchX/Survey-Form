@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />  
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <fieldset>
+      <label id="name-label">Enter tour Name
+        <input id="name" type="text" placeholder="Name" required /></label>
+      <label id="email-label">Enter tour Email
+        <input id="email" type="email" placeholder="Email" required /></label>
+      <label id="number-label">Enter tour Age
+        <input id="number" type="number" min="13" max="120" placeholder="Age" /></label>
+      </fieldset>  
+      <fieldset>
+        <label><input name="radio" type="radio" value="1" class="inline" checked/> I'm employed</label>
+        <label><input name="radio" type="radio" value="2" class="inline" /> I'm unemployed</label>
+        <label>Did you do well in school?
+        <select id="dropdown">
+          <option value="0">Yes</option>
+          <option value="1">More probably yes than no</option>
+          <option value="2">Average</option>
+          <option value="3">More probably no than yes</option>
+          <option value="4">No</option>
+        </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <p>What were your favourite subjects at school?</p>
+        <label><input type="checkbox" value="1" class="inline" /> Mathematics</label>
+        <label><input type="checkbox" value="2" class="inline" /> English Language Arts</label>
+        <label><input type="checkbox" value="3" class="inline" /> Science</label>
+        <label><input type="checkbox" value="4" class="inline" /> Social Studies (including History and Geography)
+</label>
+        <label><input type="checkbox" value="5" class="inline" /> Physical Education (PE)
+</label>
+        <label><input type="checkbox" value="6" class="inline" /> Art</label>
+        <label><input type="checkbox" value="7" class="inline" /> Music</label>
+        <label><input type="checkbox" value="8" class="inline" /> Foreign Languages (e.g., Spanish, French)
+</label>
+        <label><input type="checkbox" value="9" class="inline" /> Computer Science</label>
+        <label><input type="checkbox" value="10" class="inline" /> Health Education</label>
+        </fieldset>
+        <fieldset>
+        <label>How school helped you in your life? <textarea></textarea></label>
+        <input type="submit" id="submit" value="Submit"/>
+        </fieldset>
+    </form>
+  </body>
+</html>
